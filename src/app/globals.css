@@ -1,136 +1,29 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-  --cream: #FAF7F0;
+  --white: #ffffff;
+  --off-white: #f5f5f7;
+  --text: #1d1d1f;
+  --muted: #6e6e73;
+  --border: #d2d2d7;
   --maroon: #8B1A1A;
-  --maroon-dark: #5C1111;
-  --saffron: #D4872A;
-  --saffron-light: #E8A84A;
-  --charcoal: #0D0B09;
-  --charcoal-mid: #1A1714;
-  --charcoal-soft: #252220;
-  --gold: #C9A96E;
-  --gold-dim: #8B7355;
-  --text-dark: #1a1714;
-  --text-muted: #6b6560;
+  --maroon-hover: #6B1414;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--charcoal);
-  color: var(--cream);
-  font-family: 'DM Sans', -apple-system, sans-serif;
+  background: #fff;
+  color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* ── TYPOGRAPHY ── */
-.font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
-.font-sans  { font-family: 'DM Sans', -apple-system, sans-serif; }
-
-/* ── GRAIN TEXTURE OVERLAY ── */
-.grain::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* ── JAALI PATTERN ── */
-.jaali-bg {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23C9A96E' stroke-width='0.4' opacity='0.18'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30 Z'/%3E%3Ccircle cx='30' cy='30' r='12'/%3E%3Ccircle cx='0' cy='0' r='6'/%3E%3Ccircle cx='60' cy='0' r='6'/%3E%3Ccircle cx='0' cy='60' r='6'/%3E%3Ccircle cx='60' cy='60' r='6'/%3E%3Cpath d='M30 18 L42 30 L30 42 L18 30 Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-/* ── GLASS MORPHISM ── */
-.glass {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(201, 169, 110, 0.15);
-}
-
-.glass-light {
-  background: rgba(250, 247, 240, 0.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(139, 26, 26, 0.1);
-}
-
-/* ── GLOW EFFECTS ── */
-.glow-maroon {
-  box-shadow: 0 0 60px rgba(139, 26, 26, 0.3), 0 0 120px rgba(139, 26, 26, 0.1);
-}
-.glow-saffron {
-  box-shadow: 0 0 40px rgba(212, 135, 42, 0.25);
-}
-.text-glow {
-  text-shadow: 0 0 80px rgba(212, 135, 42, 0.4);
-}
-
-/* ── MARQUEE ── */
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-.marquee-track { animation: marquee 28s linear infinite; }
-.marquee-track:hover { animation-play-state: paused; }
-
-/* ── FADE-IN ANIMATIONS ── */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-@keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to   { opacity: 1; transform: scale(1); }
-}
-
-.animate-fade-up   { animation: fadeUp 0.8s ease forwards; }
-.animate-fade-in   { animation: fadeIn 1s ease forwards; }
-.animate-scale-in  { animation: scaleIn 0.7s ease forwards; }
-.delay-100 { animation-delay: 0.1s; opacity: 0; }
-.delay-200 { animation-delay: 0.2s; opacity: 0; }
-.delay-300 { animation-delay: 0.3s; opacity: 0; }
-.delay-400 { animation-delay: 0.4s; opacity: 0; }
-.delay-500 { animation-delay: 0.5s; opacity: 0; }
-.delay-600 { animation-delay: 0.6s; opacity: 0; }
-
-/* ── WHATSAPP PULSE ── */
+/* WhatsApp pulse */
 @keyframes pulse-green {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-  50%       { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.4); }
+  70%       { box-shadow: 0 0 0 8px rgba(37,211,102,0); }
 }
-.whatsapp-pulse { animation: pulse-green 2.5s infinite; }
-
-/* ── DIVIDER LINE ── */
-.ornament-line {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--gold-dim);
-}
-.ornament-line::before,
-.ornament-line::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold-dim), transparent);
-}
-
-/* ── HOVER LIFT ── */
-.hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.hover-lift:hover {
-  transform: translateY(-4px);
-}
+.whatsapp-pulse { animation: pulse-green 2s infinite; }
