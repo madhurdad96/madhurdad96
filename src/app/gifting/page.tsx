@@ -72,7 +72,7 @@ export default function GiftingPage() {
               </a>
               {/* Replace with actual WhatsApp number */}
               <a
-                href="https://wa.me/91XXXXXXXXXX?text=Hi%20Paitruk!%20I%20want%20to%20enquire%20about%20festive%20gifting."
+                href="https://wa.me/919610612323?text=Hi%20Paitruk!%20I%20want%20to%20enquire%20about%20festive%20gifting."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-[#8B1A1A] text-[#8B1A1A] px-8 py-4 rounded-full font-semibold text-sm hover:bg-[#8B1A1A] hover:text-white transition-colors text-center"
@@ -194,7 +194,7 @@ export default function GiftingPage() {
           <p className="text-center text-sm text-gray-500 mt-5" style={{ fontFamily: "-apple-system, sans-serif" }}>
             Prefer a quick chat?{" "}
             {/* Replace with actual WhatsApp number */}
-            <a href="https://wa.me/91XXXXXXXXXX" className="text-[#8B1A1A] underline">Message us on WhatsApp</a>
+            <a href="https://wa.me/919610612323" className="text-[#8B1A1A] underline">Message us on WhatsApp</a>
           </p>
         </div>
       </section>

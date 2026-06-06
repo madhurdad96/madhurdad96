@@ -13,7 +13,7 @@ export default function Footer() {
           </p>
           {/* Replace with actual social links */}
           <div className="flex gap-4 mt-5">
-            <a href="https://instagram.com/paitruk" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#D4872A] transition-colors text-sm">Instagram</a>
+            <a href="https://instagram.com/paitruk.bombay" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#D4872A] transition-colors text-sm">Instagram</a>
             <a href="#" className="text-gray-400 hover:text-[#D4872A] transition-colors text-sm">Facebook</a>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function Footer() {
             {/* Replace with actual address, phone, email */}
             <li>📍 Mumbai, Maharashtra</li>
             <li>
-              <a href="https://wa.me/91XXXXXXXXXX" className="hover:text-white transition-colors">
+              <a href="https://wa.me/919610612323" className="hover:text-white transition-colors">
                 📱 WhatsApp: +91 XXXX XXX XXX
               </a>
             </li>

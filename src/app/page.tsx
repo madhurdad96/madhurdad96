@@ -301,13 +301,13 @@ export default function HomePage() {
           {/* Replace href with actual Instagram profile URL */}
           <div className="mt-10 text-center">
             <a
-              href="https://instagram.com/paitruk"
+              href="https://instagram.com/paitruk.bombay"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block border border-[#D4872A] text-[#D4872A] px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#D4872A] hover:text-white transition-colors"
               style={{ fontFamily: "-apple-system, sans-serif" }}
             >
-              Follow @paitruk on Instagram →
+              Follow @paitruk.bombay on Instagram →
             </a>
           </div>
         </div>
@@ -318,7 +318,7 @@ export default function HomePage() {
         headline="Bring Paitruk home today."
         subtext="Mumbai moves fast. Paitruk brings food that feels rooted. Order now — delivered fresh to your doorstep."
         primaryCTA={{ label: "Order Now", href: "https://paitruk.dotpe.in" }}
-        secondaryCTA={{ label: "WhatsApp Us", href: "https://wa.me/91XXXXXXXXXX" }}
+        secondaryCTA={{ label: "WhatsApp Us", href: "https://wa.me/919610612323" }}
       />
     </>
   );

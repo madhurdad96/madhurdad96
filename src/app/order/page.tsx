@@ -17,7 +17,7 @@ const orderChannels = [
     icon: "💬",
     cta: "Order on WhatsApp",
     // Replace with actual WhatsApp number
-    href: "https://wa.me/91XXXXXXXXXX?text=Hi%20Paitruk!%20I%27d%20like%20to%20place%20an%20order.",
+    href: "https://wa.me/919610612323?text=Hi%20Paitruk!%20I%27d%20like%20to%20place%20an%20order.",
     badge: "Fastest",
   },
   {
@@ -26,7 +26,7 @@ const orderChannels = [
     icon: "🟠",
     cta: "Order on Swiggy",
     // Replace with your actual Swiggy restaurant link
-    href: "https://swiggy.com",
+    href: "https://www.swiggy.com/direct/brand/759374?source=swiggy-direct&subSource=generic",
     badge: null,
   },
   {
@@ -35,7 +35,7 @@ const orderChannels = [
     icon: "🔴",
     cta: "Order on Zomato",
     // Replace with your actual Zomato restaurant link
-    href: "https://zomato.com",
+    href: "https://zoma.to/r/20836576",
     badge: null,
   },
 ];

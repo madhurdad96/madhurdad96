@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 // Replace the phone number with your actual WhatsApp number
-const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+const WHATSAPP_NUMBER = "919610612323";
 const WHATSAPP_MESSAGE = "Hi Paitruk! I'd like to place an order.";
 
 export default function WhatsAppButton() {
