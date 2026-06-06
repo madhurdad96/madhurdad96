@@ -60,7 +60,7 @@ export default function StoryPage() {
                 P
               </div>
               <div style={{ fontFamily: "-apple-system, sans-serif" }}>
-                <div className="font-semibold text-[#1a1a1a]">[Founder Name]</div>
+                <div className="font-semibold text-[#1a1a1a]">Madhur Dad</div>
                 <div className="text-sm text-gray-500">Founder, Paitruk</div>
               </div>
             </div>
