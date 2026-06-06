@@ -3,11 +3,11 @@ import CTASection from "@/components/CTASection";
 
 const orderChannels = [
   {
-    name: "Order on Website",
-    description: "Best prices. Direct support. Fresh delivery promise.",
+    name: "Order Directly",
+    description: "Best prices. Direct support. Fresh delivery promise. No platform markup.",
     icon: "🌐",
-    cta: "Coming Soon",
-    href: "#",
+    cta: "Order on Paitruk",
+    href: "https://paitruk.dotpe.in",
     highlight: true,
     badge: "Best Value",
   },
@@ -171,7 +171,7 @@ export default function OrderPage() {
 
       <CTASection
         headline="Freshly made. Properly packed. Delivered across Mumbai."
-        primaryCTA={{ label: "WhatsApp Order Now", href: "https://wa.me/91XXXXXXXXXX" }}
+        primaryCTA={{ label: "Order on Paitruk", href: "https://paitruk.dotpe.in" }}
         secondaryCTA={{ label: "View Menu", href: "/menu" }}
       />
     </>

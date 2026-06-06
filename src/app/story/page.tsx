@@ -154,7 +154,7 @@ export default function StoryPage() {
       <CTASection
         headline="Taste Paitruk for yourself."
         subtext="Made for offices, homes, festivals, and every craving in between."
-        primaryCTA={{ label: "Order Now", href: "/order" }}
+        primaryCTA={{ label: "Order Now", href: "https://paitruk.dotpe.in" }}
         secondaryCTA={{ label: "View Our Menu", href: "/menu" }}
       />
     </>

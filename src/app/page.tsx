@@ -98,13 +98,15 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/order"
+              <a
+                href="https://paitruk.dotpe.in"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-[#8B1A1A] text-white px-8 py-4 rounded-full font-semibold text-sm hover:bg-[#6B1414] transition-colors text-center"
                 style={{ fontFamily: "-apple-system, sans-serif" }}
               >
                 Order Now
-              </Link>
+              </a>
               <Link
                 href="/corporate"
                 className="border-2 border-[#8B1A1A] text-[#8B1A1A] px-8 py-4 rounded-full font-semibold text-sm hover:bg-[#8B1A1A] hover:text-white transition-colors text-center"
@@ -315,7 +317,7 @@ export default function HomePage() {
       <CTASection
         headline="Bring Paitruk home today."
         subtext="Mumbai moves fast. Paitruk brings food that feels rooted. Order now — delivered fresh to your doorstep."
-        primaryCTA={{ label: "Order Now", href: "/order" }}
+        primaryCTA={{ label: "Order Now", href: "https://paitruk.dotpe.in" }}
         secondaryCTA={{ label: "WhatsApp Us", href: "https://wa.me/91XXXXXXXXXX" }}
       />
     </>

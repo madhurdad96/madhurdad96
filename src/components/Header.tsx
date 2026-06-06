@@ -55,13 +55,15 @@ export default function Header() {
 
         {/* CTA */}
         <div className="hidden lg:flex items-center gap-3">
-          <Link
-            href="/order"
+          <a
+            href="https://paitruk.dotpe.in"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#8B1A1A] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#6B1414] transition-colors"
             style={{ fontFamily: "-apple-system, sans-serif" }}
           >
             Order Now
-          </Link>
+          </a>
         </div>
 
         {/* Hamburger */}
@@ -90,21 +92,23 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <Link
-            href="/order"
+          <a
+            href="https://paitruk.dotpe.in"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="mt-4 block text-center bg-[#8B1A1A] text-white px-5 py-3 rounded-full font-semibold hover:bg-[#6B1414] transition-colors"
           >
             Order Now
-          </Link>
+          </a>
         </div>
       )}
 
       {/* Sticky mobile order bar — shown on mobile only */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#8B1A1A] text-white text-center py-3 font-semibold text-sm" style={{ fontFamily: "-apple-system, sans-serif" }}>
-        <Link href="/order" className="block">
+        <a href="https://paitruk.dotpe.in" target="_blank" rel="noopener noreferrer" className="block">
           🛒 Order Now — Delivered Across Mumbai
-        </Link>
+        </a>
       </div>
     </header>
   );

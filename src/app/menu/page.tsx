@@ -146,7 +146,7 @@ export default function MenuPage() {
       <CTASection
         headline="Ready to order?"
         subtext="Freshly made. Properly packed. Delivered across Mumbai."
-        primaryCTA={{ label: "Order Now", href: "/order" }}
+        primaryCTA={{ label: "Order Now", href: "https://paitruk.dotpe.in" }}
         secondaryCTA={{ label: "Bulk / Corporate Orders", href: "/corporate" }}
       />
     </>

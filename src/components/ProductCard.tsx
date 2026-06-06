@@ -18,7 +18,7 @@ export default function ProductCard({
   category,
   imageSrc,
   imageAlt,
-  orderHref = "/order",
+  orderHref = "https://paitruk.dotpe.in",
 }: ProductCardProps) {
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover-lift border border-[#f0ebe3]">
@@ -52,13 +52,15 @@ export default function ProductCard({
           <span className="text-[#8B1A1A] font-bold text-base" style={{ fontFamily: "-apple-system, sans-serif" }}>
             {price || "₹ --"}
           </span>
-          <Link
+          <a
             href={orderHref}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#8B1A1A] text-white px-4 py-2 rounded-full text-xs font-semibold hover:bg-[#6B1414] transition-colors"
             style={{ fontFamily: "-apple-system, sans-serif" }}
           >
             Order Now
-          </Link>
+          </a>
         </div>
       </div>
     </div>
